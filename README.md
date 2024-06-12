@@ -2,6 +2,14 @@
 
 Simple HTTP(S) server in Crystal
 
+## What is it
+
+`https` is a simple command line tool to start a simple http or https server.
+It supports:
+- basic `CGI`
+- HTTPS (can specify which key/cert to use)
+- serve directory of static file (does not chroot)
+
 ## Usage
 
 ```
