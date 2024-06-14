@@ -5,7 +5,7 @@ class CGIHandler
 
     def call(context)
         path = "." + context.request.path
-        if path =~ %r{^./cgi} && File.executable?(path)
+        if path =~ %r{^./cgi|^./cgi-bin} && File.executable?(path)
             Process.run(
                 path,
                 env: {
